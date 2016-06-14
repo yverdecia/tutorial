@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document  */
+
+body{margin:0; padding:0; font-family:Myriad Pro, Arial, Tahoma;}
+
+@font-face {
+ font-family: Myriad Pro;
+ src: url('MyriadPro-Regular.otf');
+}
+
+.clearfix {
+	content:"";
+	clear:both;
+}
+
+#header{background-color:#2D2D2D; border-bottom:5px solid #73BBE0; padding:1px 10px 20px 35px;}
+h1{color:#fff; font-size:50px; font-weight:normal;}
+h1 span{color:#73BBE0; font-weight:bold;}
+p{color:#fff;}
+
+
+
+/*  Tabs  */
+.tabs{position:absolute;  margin-top:-37px; margin-top:-36px\0/; z-index:1000;}
+.tabs li{
+	 display:inline; padding:0px; margin:0px;
+}
+
+.tabs li .first{
+	-webkit-border-radius: 5px 0px 0px 0px;
+	-moz-border-radius: 5px 0px 0px 0px;
+	border-radius: 5px 0px 0px 0px;
+	
+	}
+.tabs li .last{
+	-webkit-border-radius: 0px 5px 0px 0px;
+	-moz-border-radius: 0px 5px 0px 0px;
+	border-radius: 0px 5px 0px 0px;
+	border-right:0px;
+	}
+	
+.tabs li a{color:#3B3B3B; text-decoration:none; font-size:14px;
+float:left;
+padding:5px 10px; border-right:1px solid #EFEFEF;
+
+
+	-moz-text-shadow: 0px 1px 0px #fff;
+	-webkit-text-shadow: 0px 1px 0px #fff;
+	text-shadow: 0px 1px 0px #fff;
+	
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#DBDBDB), to(#ECECEC));
+	background: -moz-linear-gradient(#DBDBDB, #ECECEC 70%);
+	background: linear-gradient(#DBDBDB, #ECECEC 70%);
+	-pie-background: linear-gradient(#DBDBDB, #ECECEC 70%);
+	behavior: url(PIE.htc);
+
+}
+
+.tabs li a:hover{
+	color:#2895CD;
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#EEEEEE), to(#ECECEC));
+	background: -moz-linear-gradient(#EEEEEE, #ECECEC 70%);
+	background: linear-gradient(#EEEEEE, #ECECEC 70%);
+	-pie-background: linear-gradient(#EEEEEE, #ECECEC 70%);
+	
+behavior: url(PIE.htc);
+}
+
+.tabs li a.selected{
+	color:#2895CD;
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#fff), to(#fff));
+	background: -moz-linear-gradient(#fff, #fff 70%);
+	background: linear-gradient(#fff, #fff 70%);
+	-pie-background: linear-gradient(#fff, #fff 70%);
+	behavior: url(PIE.htc);
+}
+
+/* Content */
+
+#tabs-content{margin:20px 0px 0px 40px;} 
+
+/* Breadcrumb  */
+
+.breadcrumb{margin:10px 0px 0px 40px; padding:0px;}
+.breadcrumb li{display:inline; font-size:11px;}
+.breadcrumb li a, .breadcrumb li a:visited, .breadcrumb li a:active{padding:0px 5px 0px 0px; font-size:11px;}
+.breadcrumb li a:hover{color:#000;}
+
+#tabs-content{width:920px;}
+
